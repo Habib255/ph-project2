@@ -5,7 +5,10 @@
 }
 body{
     background-color: whitesmoke;
+    font-family: 'Open Sans', sans-serif;
 }
+/* ======common design ======= */
+
 .container{
     max-width: 1200px;
     margin: 0 auto;
@@ -40,7 +43,7 @@ nav{
 }
 
 
-.details{
+.intro{
     display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 50px;
@@ -65,14 +68,17 @@ nav{
 }
 
 
-.image{
+.intro-image{
+    /* background-image: url(images/Circle\ design.svg);
+    background-repeat: no-repeat;
+    background-position: center; */
   display: flex;
   justify-content: center;
   align-items: flex-end;
   margin-bottom: 40px;
  
 }
-.image img{
+.intro-image img{
     width: 70%;
 }
 
@@ -80,11 +86,12 @@ nav{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 50px;
 
 }
 
 
-.abcd{
+.product-details{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap: 30px;
@@ -108,6 +115,9 @@ nav{
     margin-bottom: 50px;
     font-size: 20px;
 }
+/* ------------
+-------footer-----
+----------------- */
 footer{
     width: 100%;
     background-color: black;
@@ -116,6 +126,7 @@ footer{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 10px;
 
 }
 
@@ -125,4 +136,5 @@ footer h5{
 footer p{
     color: whitesmoke;
     text-align: center;
+    
 }
