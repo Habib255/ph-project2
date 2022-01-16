@@ -21,9 +21,14 @@ header{
 }
 
 
-nav{
+/* nav{
     display: flex;
     justify-content: space-between;
+} */
+nav{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
 }
 .navbar ul{
     display: flex;
@@ -70,8 +75,7 @@ nav{
 
 .intro-image{
     /* background-image: url(images/Circle\ design.svg);
-    background-repeat: no-repeat;
-    background-position: center; */
+    background-repeat: no-repeat; */
   display: flex;
   justify-content: center;
   align-items: flex-end;
@@ -137,4 +141,32 @@ footer p{
     color: whitesmoke;
     text-align: center;
     
+}
+/* mobile responsive */
+@media (max-width:768px){
+    nav{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .small-heading{
+        font-size: 25px;
+        order: 2;
+        padding-top: 40px;
+    }
+    .intro{
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-bottom: 50px;
+    }
+    .banner{
+        order: 2;
+    }
+
+
+    .product-details{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+
 }
