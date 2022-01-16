@@ -21,15 +21,15 @@ header{
 }
 
 
-/* nav{
+nav{
     display: flex;
     justify-content: space-between;
-} */
-nav{
+}
+/* nav{
     display: grid;
     grid-template-columns: 1fr 1fr;
 
-}
+} */
 .navbar ul{
     display: flex;
     
@@ -131,6 +131,7 @@ footer{
     justify-content: center;
     align-items: center;
     gap: 10px;
+    margin-top: 50px;
 
 }
 
@@ -142,6 +143,21 @@ footer p{
     text-align: center;
     
 }
+
+
+/* tab responsive */
+@media (max-width:950px) {
+    
+
+.product-details{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+}
+
+
+
+
 /* mobile responsive */
 @media (max-width:768px){
     nav{
@@ -162,7 +178,6 @@ footer p{
         order: 2;
     }
 
-
     .product-details{
         display: grid;
         grid-template-columns: 1fr;
@@ -170,3 +185,4 @@ footer p{
 
 
 }
+
